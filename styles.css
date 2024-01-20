@@ -1,0 +1,136 @@
+.oclock{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.o-box{
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+
+}
+.item-box{
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+     /* Adjust colors and percentages as needed */
+    border-radius: 50%; /* Make it a circle */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxhour span{
+    position: absolute;
+    font-size: 1.5rem;
+    color: #41eb0d;
+}
+ 
+.boxhour span:nth-child(1){
+    top: 5px;
+}
+.boxhour span:nth-child(2){
+    right: 10px;
+}
+.boxhour span:nth-child(3){
+    bottom:5px;
+}
+.boxhour span:nth-child(4){
+    left:10px;
+}
+
+.boxMin span{
+    position: absolute;
+    font-size: 1.5rem;
+    color: rgb(33, 198, 204);
+}
+ 
+.boxMin span:nth-child(1){
+    top: 5px;
+}
+.boxMin span:nth-child(2){
+    right: 10px;
+}
+.boxMin span:nth-child(3){
+    bottom:5px;
+}
+.boxMin span:nth-child(4){
+    left:10px;
+}
+
+.boxSec span{
+    position: absolute;
+    font-size: 1.5rem;
+    color: yellow;
+}
+ 
+.boxSec span:nth-child(1){
+    top: 5px;
+}
+.boxSec span:nth-child(2){
+    right: 10px;
+}
+.boxSec span:nth-child(3){
+    bottom:5px;
+}
+.boxSec span:nth-child(4){
+    left:10px;
+}
+
+.oklock-number span{
+    position: static;
+    font-size: 8rem;
+}
+
+
+#hourNumberBox{
+    background: conic-gradient(
+        #41eb0d 0% 10%,
+        
+        #333 10% 100%
+    );
+    box-shadow: 1px -1px 10px 2px red;
+}
+#hourNumber{
+    color: red;
+}
+#minNumberBox{
+    background: conic-gradient(
+        rgb(33, 198, 204) 0% 50%,
+        
+        #333 50% 100%
+    );
+    box-shadow: 1px -1px 10px 2px blue;
+}
+#minNumber{
+    color: blue ;
+}
+#secNumberBox{
+    background: conic-gradient(
+        blue 0% 1%,
+        
+        #333 1% 100%
+    );
+    box-shadow: 1px -1px 10px 0.1px yellow;
+}
+#secNumber{
+    color: yellow;
+}
+
+.boxhour, .boxMin , .boxSec{
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
